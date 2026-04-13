@@ -1,0 +1,30 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["fMatriculas","DimCurso","DimTurma","DimPessoa","DimInstituicao","DimConteudista","DimPoder","DimEsfera","DimEndereco","DimTematica"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fMatriculas
+ref table DateTableTemplate_21f4f737-671f-42c6-b420-29bee16b6f64
+ref table LocalDateTable_839c4b30-125b-4407-8ebc-37b0299ae4bc
+ref table LocalDateTable_dffd5c7d-210b-4f15-8395-1f985fe34eb6
+ref table DimCurso
+ref table DimTurma
+ref table DimPessoa
+ref table DimInstituicao
+ref table DimConteudista
+ref table DimPoder
+ref table DimEsfera
+ref table DimEndereco
+ref table DimTematica
+
+ref cultureInfo pt-BR
+

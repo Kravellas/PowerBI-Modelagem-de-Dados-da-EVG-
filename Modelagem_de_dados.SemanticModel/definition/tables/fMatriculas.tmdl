@@ -1,0 +1,278 @@
+table fMatriculas
+	lineageTag: f3a328a3-c695-4810-9736-33854de52a7b
+
+	column dt_matricula
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b944c023-13ce-4bb3-ba01-0394060e6807
+		summarizeBy: none
+		sourceColumn: dt_matricula
+
+		variation Variation
+			isDefault
+			relationship: 649e216a-d88c-4fd4-839b-2d271c0458e9
+			defaultHierarchy: LocalDateTable_839c4b30-125b-4407-8ebc-37b0299ae4bc.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_turma
+		dataType: int64
+		formatString: 0
+		lineageTag: 8908acd2-0ec4-4e1d-9615-c7c4bb0b1e7c
+		summarizeBy: none
+		sourceColumn: cod_turma
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_turma
+		dataType: string
+		lineageTag: 1aff5ef1-cd9b-4e89-8097-1fed5b7fd89c
+		summarizeBy: none
+		sourceColumn: nome_turma
+
+		annotation SummarizationSetBy = Automatic
+
+	column modalidade_turma
+		dataType: string
+		lineageTag: c1579908-f55a-4b34-8f2e-9cbfa6fefaf2
+		summarizeBy: none
+		sourceColumn: modalidade_turma
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_curso
+		dataType: int64
+		formatString: 0
+		lineageTag: b54ab4e8-a47f-4008-8638-7248ecf04196
+		summarizeBy: sum
+		sourceColumn: cod_curso
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_fim
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2d18371f-eb47-4a41-9f00-39c8ae422a40
+		summarizeBy: none
+		sourceColumn: dt_fim
+
+		variation Variation
+			isDefault
+			relationship: f00be755-4084-4f61-8000-2e39140d2fc7
+			defaultHierarchy: LocalDateTable_dffd5c7d-210b-4f15-8395-1f985fe34eb6.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column sit_turma
+		dataType: string
+		lineageTag: 63ce022c-7fef-4b8f-825f-d45ceb910189
+		summarizeBy: none
+		sourceColumn: sit_turma
+
+		annotation SummarizationSetBy = Automatic
+
+	column instituicao
+		dataType: string
+		lineageTag: 12f03f04-fa94-4052-8c94-2a451b26dcab
+		summarizeBy: none
+		sourceColumn: instituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio_pessoa
+		dataType: string
+		lineageTag: d0453e20-099c-405e-95f5-9afe2153820e
+		summarizeBy: none
+		sourceColumn: municipio_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_pessoa
+		dataType: string
+		lineageTag: fce0e24f-4cb8-4411-aadb-62c7bb24957e
+		summarizeBy: none
+		sourceColumn: uf_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column conteudista
+		dataType: string
+		lineageTag: 675cb69b-7845-4896-b59c-543b3f5f6caa
+		summarizeBy: none
+		sourceColumn: conteudista
+
+		annotation SummarizationSetBy = Automatic
+
+	column tematica
+		dataType: string
+		lineageTag: 8d493277-e777-41a3-9847-32753ddbd2cd
+		summarizeBy: none
+		sourceColumn: tematica
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_pessoa
+		dataType: string
+		lineageTag: fee3a67f-8d50-4e77-9342-acbd6b585337
+		summarizeBy: none
+		sourceColumn: codigo_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column sit_matricula
+		dataType: string
+		lineageTag: 6b81687b-8b16-4946-a999-08fd04a18bd9
+		summarizeBy: none
+		sourceColumn: sit_matricula
+
+		annotation SummarizationSetBy = Automatic
+
+	column poder
+		dataType: string
+		lineageTag: 88e16b11-cc74-4586-8fee-1da4a0c2545c
+		summarizeBy: none
+		sourceColumn: poder
+
+		annotation SummarizationSetBy = Automatic
+
+	column esfera
+		dataType: string
+		lineageTag: 50803e9a-76fc-4a68-9ab1-79d1cc4ca0ae
+		summarizeBy: none
+		sourceColumn: esfera
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_pessoa
+		dataType: string
+		lineageTag: a28bb3dc-991c-4cc2-ba51-b0f0b48019e2
+		summarizeBy: none
+		sourceColumn: email_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefone_pessoa
+		dataType: int64
+		formatString: 0
+		lineageTag: b1670b1a-d514-4710-a2fe-ad5ccd28d8f2
+		summarizeBy: sum
+		sourceColumn: telefone_pessoa
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_conteudista
+		dataType: string
+		lineageTag: 448e5991-a8e6-4310-98ea-79ffb396c611
+		summarizeBy: none
+		sourceColumn: email_conteudista
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimPoder.codigo_poder'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b8182ac-f24b-4ffc-83bc-855258bfa232
+		summarizeBy: none
+		sourceColumn: DimPoder.codigo_poder
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimEsfera.codigo_esfera'
+		dataType: int64
+		formatString: 0
+		lineageTag: 39a56504-af4c-45ff-b9f9-c69f9fddd8f6
+		summarizeBy: none
+		sourceColumn: DimEsfera.codigo_esfera
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_matricula
+		dataType: string
+		lineageTag: ca486103-e61f-4074-835f-5070965332c8
+		summarizeBy: none
+		sourceColumn: cod_matricula
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_curso
+		dataType: string
+		lineageTag: 4ca1d809-0b79-446c-84e5-d6efb5b17503
+		summarizeBy: none
+		sourceColumn: nome_curso
+
+		annotation SummarizationSetBy = Automatic
+
+	column carga_horaria
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d89a42f-2e92-40d8-83ed-f9840907fd4f
+		summarizeBy: sum
+		sourceColumn: carga_horaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimTematica.codigo_tematica'
+		dataType: int64
+		formatString: 0
+		lineageTag: 038bc1f5-5ddc-445f-a311-3ee2f91547d8
+		summarizeBy: sum
+		sourceColumn: DimTematica.codigo_tematica
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimEndereco.codigo_endereco'
+		dataType: int64
+		formatString: 0
+		lineageTag: c97c06d4-dd35-453c-99bd-7f27cf57ae76
+		summarizeBy: none
+		sourceColumn: DimEndereco.codigo_endereco
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimInstituicao.codigo_instituicao'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6192c700-87a2-4460-86a3-450148f1fde8
+		summarizeBy: none
+		sourceColumn: DimInstituicao.codigo_instituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DimConteudista.codigo_conteudista'
+		dataType: int64
+		formatString: 0
+		lineageTag: 440f52a8-4866-4b7a-84bc-916b18a7a223
+		summarizeBy: sum
+		sourceColumn: DimConteudista.codigo_conteudista
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fMatriculas = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\thorc\Downloads\amostra_evg (1).csv"),[Delimiter=",", Columns=25, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"cod_matricula", type text}, {"dt_matricula", type datetime}, {"nacionalidade", type text}, {"cod_turma", Int64.Type}, {"nome_turma", type text}, {"modalidade_turma", type text}, {"cod_curso", Int64.Type}, {"nome_curso", type text}, {"carga_horaria", Int64.Type}, {"dt_fim", type datetime}, {"sit_turma", type text}, {"instituicao", type text}, {"municipio_pessoa", type text}, {"uf_pessoa", type text}, {"conteudista", type text}, {"tematica", type text}, {"codigo_pessoa", type text}, {"sexo", type text}, {"idade", Int64.Type}, {"sit_matricula", type text}, {"poder", type text}, {"esfera", type text}, {"email_pessoa", type text}, {"telefone_pessoa", Int64.Type}, {"email_conteudista", type text}}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado", {"poder"}, DimPoder, {"poder"}, "DimPoder", JoinKind.LeftOuter),
+				    #"DimPoder Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "DimPoder", {"codigo_poder"}, {"DimPoder.codigo_poder"}),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"DimPoder Expandido", {"esfera"}, DimEsfera, {"esfera"}, "DimEsfera", JoinKind.LeftOuter),
+				    #"DimEsfera Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "DimEsfera", {"codigo_esfera"}, {"DimEsfera.codigo_esfera"}),
+				    #"Consultas Mescladas2" = Table.NestedJoin(#"DimEsfera Expandido", {"nacionalidade"}, DimPessoa, {"nacionalidade"}, "DimPessoa", JoinKind.LeftOuter),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Consultas Mescladas2",{"sexo", "idade"}),
+				    #"Consultas Mescladas3" = Table.NestedJoin(#"Colunas Removidas", {"tematica"}, DimTematica, {"tematica"}, "DimTematica", JoinKind.LeftOuter),
+				    #"DimTematica Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas3", "DimTematica", {"codigo_tematica"}, {"DimTematica.codigo_tematica"}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"DimTematica Expandido",{"DimPessoa", "nacionalidade"}),
+				    #"Consultas Mescladas4" = Table.NestedJoin(#"Colunas Removidas1", {"municipio_pessoa", "uf_pessoa"}, DimEndereco, {"municipio_pessoa", "uf_pessoa"}, "DimEndereco", JoinKind.LeftOuter),
+				    #"DimEndereco Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas4", "DimEndereco", {"codigo_endereco"}, {"DimEndereco.codigo_endereco"}),
+				    #"Consultas Mescladas5" = Table.NestedJoin(#"DimEndereco Expandido", {"instituicao"}, DimInstituicao, {"instituicao"}, "DimInstituicao", JoinKind.LeftOuter),
+				    #"DimInstituicao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas5", "DimInstituicao", {"codigo_instituicao"}, {"DimInstituicao.codigo_instituicao"}),
+				    #"Consultas Mescladas6" = Table.NestedJoin(#"DimInstituicao Expandido", {"conteudista"}, DimConteudista, {"conteudista"}, "DimConteudista", JoinKind.LeftOuter),
+				    #"DimConteudista Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas6", "DimConteudista", {"codigo_conteudista"}, {"DimConteudista.codigo_conteudista"})
+				in
+				    #"DimConteudista Expandido"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

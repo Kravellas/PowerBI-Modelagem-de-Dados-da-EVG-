@@ -1,0 +1,46 @@
+relationship 649e216a-d88c-4fd4-839b-2d271c0458e9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fMatriculas.dt_matricula
+	toColumn: LocalDateTable_839c4b30-125b-4407-8ebc-37b0299ae4bc.Date
+
+relationship f00be755-4084-4f61-8000-2e39140d2fc7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fMatriculas.dt_fim
+	toColumn: LocalDateTable_dffd5c7d-210b-4f15-8395-1f985fe34eb6.Date
+
+relationship AutoDetected_ab9271a5-95a6-4425-8a8c-6f02a39638a8
+	fromColumn: fMatriculas.conteudista
+	toColumn: DimConteudista.conteudista
+
+relationship AutoDetected_d0022896-1260-468c-b658-c6ca509c5b13
+	fromColumn: fMatriculas.tematica
+	toColumn: DimTematica.tematica
+
+relationship AutoDetected_45ddfa62-74b8-4166-b497-ab6537cb0016
+	fromColumn: fMatriculas.codigo_pessoa
+	toColumn: DimPessoa.codigo_pessoa
+
+relationship AutoDetected_12eab264-0654-4e74-bf4e-a7bd72d22d5d
+	fromColumn: fMatriculas.'DimPoder.codigo_poder'
+	toColumn: DimPoder.codigo_poder
+
+relationship AutoDetected_e7423842-5ddd-4779-96b8-d19c7c1824c2
+	fromColumn: fMatriculas.'DimEsfera.codigo_esfera'
+	toColumn: DimEsfera.codigo_esfera
+
+relationship AutoDetected_83dfad1f-0681-467b-826f-4746257b893e
+	fromColumn: fMatriculas.nome_curso
+	toColumn: DimCurso.nome_curso
+
+relationship AutoDetected_e1565fe1-4465-4b1a-a39d-3fc162657dca
+	fromColumn: fMatriculas.'DimEndereco.codigo_endereco'
+	toColumn: DimEndereco.codigo_endereco
+
+relationship AutoDetected_01df8641-2e58-494f-b147-3a4d8573e45f
+	fromColumn: fMatriculas.'DimInstituicao.codigo_instituicao'
+	toColumn: DimInstituicao.codigo_instituicao
+
+relationship 552bf12c-5073-80cc-6b50-73e112fb47af
+	fromColumn: fMatriculas.cod_turma
+	toColumn: DimTurma.cod_turma
+
